@@ -31,7 +31,7 @@ const rows = [
   { id: 9, coinName: 'MyCoin', coinSymbol: 'MyCoin', price: 65, mktcap: 10 },
 ]
 
-function CoinList() {
+function TrendingList() {
   return (
     <div style={{ height: 400, width: '100%' }}>
       <DataGrid
@@ -46,4 +46,4 @@ function CoinList() {
 }
 
 
-export default CoinList;
+export default TrendingList;

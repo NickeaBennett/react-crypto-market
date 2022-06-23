@@ -7,9 +7,9 @@ import {
   Route, 
 } from 'react-router-dom';
 import App from './App';
-import Home from './routes/home'; 
-import TrendingCoins from './routes/trending-coins';
-import FavoriteCoins from './routes/favorite-coins';
+import Home from './pages/home'; 
+import TrendingCoins from './pages/trending-coins';
+import FavoriteCoins from './pages/favorite-coins';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root')

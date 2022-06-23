@@ -13,20 +13,18 @@ function CoinData() {
                 Accept: "application/json"
             }
         })
-
-        .then(r => r.json())
+        .then((r) => r.json())
         console.log(r)
-        .then(data => console.log(data))
+        .then(data => setCoin(data))
         console.log(data)
 
     }, []);
-
-    console.log(data)
 
 
   return (
     <>
         <h2>Coindata</h2>
+
 
     </>
   )
