@@ -34,7 +34,7 @@ const rows = [
   { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ];
 
-export default function DataTable() {
+function TrendingList() {
   return (
     <div style={{ height: 400, width: '100%' }}>
       <DataGrid
@@ -47,3 +47,5 @@ export default function DataTable() {
     </div>
   );
 }
+
+export default TrendingList;
