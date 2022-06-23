@@ -2,8 +2,10 @@ import React from 'react'
 
 function CoinList() {
   return (
-    <div>CoinList</div>
-  )
+    <div>
+      <h1> Coin List </h1>
+    </div>
+  );
 }
 
-export default CoinList
+export default CoinList;
