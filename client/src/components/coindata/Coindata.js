@@ -20,12 +20,9 @@ function CoinData() {
 
     }, []);
 
-
   return (
     <>
         <h2>Coindata</h2>
-
-
     </>
   )
 }
