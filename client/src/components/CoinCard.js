@@ -2,8 +2,10 @@ import React from 'react'
 
 function CoinCard() {
   return (
-    <div>CoinCard</div>
-  )
+    <div>
+      <h1> Coin Card </h1>
+    </div>
+  );
 }
 
-export default CoinCard
+export default CoinCard;
