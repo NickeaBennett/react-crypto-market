@@ -20,19 +20,19 @@ const columns: GridColDef[] = [
 ];
 
 const rows = [
-  { id: 1, coinName: 'Snow', coinSymbol: 'Jon', price: 35, mktcap: 10 },
-  { id: 2, coinName: 'Lannister', coinSymbol: 'Cersei', price: 42, mktcap: 10 },
-  { id: 3, coinName: 'Lannister', coinSymbol: 'Jaime', price: 45, mktcap: 10 },
-  { id: 4, coinName: 'Stark', coinSymbol: 'Arya', price: 16, mktcap: 10 },
-  { id: 5, coinName: 'Targaryen', coinSymbol: 'Daenerys', price: 21, mktcap: 10 },
-  { id: 6, coinName: 'Melisandre', coinSymbol: 'Null', price: 150, mktcap: 10 },
+  { id: 1, coinName: 'Bitcoin', coinSymbol: 'BTC', price: 35, mktcap: 10 },
+  { id: 2, coinName: 'Etherium', coinSymbol: 'ETH', price: 42, mktcap: 10 },
+  { id: 3, coinName: 'Apecoin', coinSymbol: 'APE', price: 45, mktcap: 10 },
+  { id: 4, coinName: 'Dodge', coinSymbol: 'Dodge', price: 16, mktcap: 10 },
+  { id: 5, coinName: 'Terra', coinSymbol: 'Tera', price: 21, mktcap: 10 },
+  { id: 6, coinName: 'Eth classic', coinSymbol: 'ETHC', price: 150, mktcap: 10 },
   { id: 7, coinName: 'Frances', coinSymbol: 'Rossini', price: 36, mktcap: 10 },
   { id: 9, coinName: 'Roxie', coinSymbol: 'Harvey', price: 65, mktcap: 10 },
 ]
 
 function CoinList() {
   return (
-    <div style={{ height: 400, width: '90%' }}>
+    <div style={{ height: 400, width: '100%' }}>
       <DataGrid
         rows={rows}
         columns={columns}
