@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 function CoinCard() {
   return (
-    <div>
-      <h1> Coin Card </h1>
-    </div>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+      </tbody>
   );
 }
 
