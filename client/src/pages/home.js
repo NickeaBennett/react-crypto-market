@@ -1,5 +1,5 @@
 import React from 'react';
-import CoinList from '../components/CoinList';
+// import CoinContainer from '../components/CoinContainer/CoinContainer';
 
 function Home() {
 
@@ -7,7 +7,7 @@ function Home() {
 
     <div style={{ padding: "1rem 0"}}>
         <h2>Hello World!</h2>
-        <CoinList />
+        
     </div>
   );
 }

@@ -1,14 +1,14 @@
 import React from 'react';
-import TrendingList from '../components/coindata/TrendingList';
+import TrendingCard from '../components/TrendingCard/TrendingCard';
 
 function TrendingCoins() {
   // const getTrendingCoin = (data) => { return data.items.coins };
   return (
     <div className='App'>
       <h2>Trending Coins</h2>
-        <TrendingList />
+        {/* <Trending TrendingCoins={TrendingCoins} /> */}
     </div>
   );
 }
 
-export default TrendingCoins;
+export default TrendingCard;

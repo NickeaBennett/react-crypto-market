@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
-import Navbar from './components/Navbar';
-import 'bootstrap/dist/css/bootstrap.css';
+import Navbar from './components/Navbar/Navbar';
+// import CardContainer from './components/CardContainer/CardContainer';
 // import ReactDOM from 'react-dom/client';
 import { 
   Routes,
@@ -9,12 +9,14 @@ import {
 import Home from './pages/home'; 
 import TrendingCoins from './pages/trending-coins';
 import FavoriteCoins from './pages/favorite-coins';
+// import CoinContainer from './components/CoinContainer/CoinContainer';
 
 
 function App() {
 
-  const [trendingData, setTrendingData] = useState([])
-
+  const [trendingData, setTrendingData] = useState({});
+  // const [coinData, setCoinData] = useState({});
+  
   useEffect(() => {
       fetch('https://api.coingecko.com/api/v3/search/trending', {
         headers: {
@@ -23,8 +25,7 @@ function App() {
     })
     .then((r) => r.json())
     .then((data) => {
-      setTrendingData(data.coins)
-      console.log(data.coins);
+      setTrendingData({...data})
     })
     .catch((err) => console.log(err) )
     
@@ -39,6 +40,7 @@ function App() {
         <Route path="trending-coins" element={<TrendingCoins />} />
         <Route path="favorite-coins" element={<FavoriteCoins />} />
       </Routes>
+      {/* <CoinContainer trendingData={trendingData} /> */}
     </div>
   );
 }
